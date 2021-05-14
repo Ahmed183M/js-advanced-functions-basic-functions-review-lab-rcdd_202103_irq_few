@@ -37,9 +37,10 @@ function actionApplyer(integer, arrayOfTransforms = [
           function(a){ return a % 7 }
         ]){
   let result;
-  for(const act in arrayOfTransforms){
-    result = act(result);
+  for(let i=0; i<arrayOfTransforms.length; i++){
+    result = arrayOfTransforms[i](result);
   }
+  return result
   console.log(result);
 }
 
