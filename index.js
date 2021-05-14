@@ -1,4 +1,4 @@
 // Your code here
-function saturdayFun(){
-  console.log("");
+function saturdayFun(text=""){
+  console.log(`This Saturday, I want to ${text}!`);
 }
