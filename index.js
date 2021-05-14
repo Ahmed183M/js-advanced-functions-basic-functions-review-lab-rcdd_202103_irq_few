@@ -36,8 +36,5 @@ function actionApplyer(integer, arrayOfTransforms = [
           function(a){ return a + 1000},
           function(a){ return a % 7 }
         ]){
-  for(const act in arrayOfTransforms){
-    integer = act(integer);
-  }
-  return integer;
+  return arrayOfTransforms[0](integer);
 }
