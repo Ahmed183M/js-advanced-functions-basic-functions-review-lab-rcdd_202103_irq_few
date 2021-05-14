@@ -32,7 +32,7 @@ const Calculator = {
 }
 
 let array = [Calculator.add, Calculator.divide];
-function actionApplyer(integer, array){
+function actionApplyer(integer, array=array){
   for(const act in array){
     integer = act(integer);
   }
