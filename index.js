@@ -12,3 +12,4 @@ const wrapAdjective = function(visual="*"){
     return "You are "+visual+text+visual+"!";
   }
 }
+
