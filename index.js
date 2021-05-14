@@ -40,7 +40,7 @@ function actionApplyer(integer, arrayOfTransforms = [
   for(const act in arrayOfTransforms){
     result = act(result);
   }
-  return result;
+  console.log(result);
 }
 
 actionApplyer(5)
