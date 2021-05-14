@@ -33,7 +33,11 @@ const Calculator = {
 
 let acts = [Calculator.add, Calculator.divide];
 
-function actionApplyer(integer, array=acts){
+function actionApplyer(integer, arrayOfTransforms = [
+          function(a){ return a * 2 },
+          function(a){ return a + 1000},
+          function(a){ return a % 7 }
+        ]){
   for(const act in array){
     integer = act(integer);
   }
