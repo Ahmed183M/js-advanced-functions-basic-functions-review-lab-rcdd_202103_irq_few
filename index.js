@@ -39,4 +39,4 @@ function actionApplyer(integer, arrayOfTransforms = [
   console.log(arrayOfTransforms[0](integer));
 }
 
-actionApplyer()
+actionApplyer(5)
