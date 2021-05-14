@@ -40,8 +40,9 @@ function actionApplyer(integer, arrayOfTransforms = [
   for(let i=0; i<arrayOfTransforms.length; i++){
     result = arrayOfTransforms[i](result);
   }
-  return result
   console.log(result);
+  return result
+  
 }
 
 actionApplyer(5)
