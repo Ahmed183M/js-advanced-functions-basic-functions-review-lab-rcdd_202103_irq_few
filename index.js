@@ -7,8 +7,8 @@ const mondayWork = function(text="go to the office") {
   return `This Monday, I will ${text}.`;
 }
 
-const wrapAdjective = function(){
-  function(text="go to the office") {
-    return `This Monday, I will ${text}.`;
+const wrapAdjective = function(visual="*"){
+  return function(text="special") {
+    return `You are ${text}.`;
   }
 }
