@@ -30,3 +30,10 @@ const Calculator = {
     return num1/num2;
   },
 }
+
+function actionApplyer(integer, array){
+  for(const act in array){
+    integer = act(integer);
+  }
+  return integer;
+}
