@@ -6,3 +6,4 @@ function saturdayFun(text="roller-skate"){
 const mondayWork = function(text="go to the office") {
   return `This Monday, I will ${text}.`;
 }
+
