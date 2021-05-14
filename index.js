@@ -9,6 +9,6 @@ const mondayWork = function(text="go to the office") {
 
 const wrapAdjective = function(visual="*"){
   return function(text="special") {
-    return "You are "+visual+ text;
+    return "You are "+visual+text+visual+"!";
   }
 }
