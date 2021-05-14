@@ -14,23 +14,24 @@ const wrapAdjective = function(visual="*"){
 }
 
 const Calculator = {
-  add(num1, num2){
+  add(num1, num2=3){
     return num1+num2;
   },
   
-  subtract(num1, num2){
+  subtract(num1, num2=3){
     return num1-num2;
   },
   
-  multiply(num1, num2){
+  multiply(num1, num2=3){
     return num1*num2;
   },
   
-  divide(num1, num2){
+  divide(num1, num2=4){
     return num1/num2;
   },
 }
 
+let array = [Calculator.add, Calculator.divide];
 function actionApplyer(integer, array){
   for(const act in array){
     integer = act(integer);
