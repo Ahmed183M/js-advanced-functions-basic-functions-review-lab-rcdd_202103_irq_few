@@ -31,8 +31,6 @@ const Calculator = {
   },
 }
 
-let acts = [Calculator.add, Calculator.divide];
-
 function actionApplyer(integer, arrayOfTransforms = [
           function(a){ return a * 2 },
           function(a){ return a + 1000},
